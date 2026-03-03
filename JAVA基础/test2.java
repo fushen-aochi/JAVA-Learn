@@ -8,5 +8,26 @@ public class test2 {
         System.out.print("Input your age: "); // 打印提示
         int age = scanner.nextInt(); // 读取一行输入并获取整数
         System.out.printf("Hi, %s, you are %d\n", name, age); // 格式化输出
+        student a = new student(1);
+        a.info();
+    }
+}
+
+class student {
+    private int age;
+    private String name;
+
+    public student(int age,String name)
+    {
+        this.age = age;
+        this.name =name;
+    }
+    public student(int age)
+    {
+        this(age,"unname");
+    }
+
+    public void info(){
+        System.out.println(age+name+"hello");
     }
 }
